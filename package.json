@@ -1,0 +1,53 @@
+{
+  "name": "dagloom",
+  "version": "0.1.0",
+  "description": "🧵 The workflow loom for coding agents — weave shell & agent tasks into a DAG: parallel execution, resumable state, exponential-backoff retries, and a morning-report summary. Zero dependencies.",
+  "type": "module",
+  "bin": {
+    "dagloom": "dist/src/cli.js"
+  },
+  "engines": {
+    "node": ">=20.10"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "workflow",
+    "dag",
+    "pipeline",
+    "orchestration",
+    "cli",
+    "claude-code",
+    "codex",
+    "ai-agents",
+    "task-runner",
+    "zero-dependency",
+    "resumable",
+    "make"
+  ],
+  "author": "EAnge1o",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EAnge1o/dagloom.git"
+  },
+  "homepage": "https://github.com/EAnge1o/dagloom#readme",
+  "bugs": {
+    "url": "https://github.com/EAnge1o/dagloom/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.4"
+  }
+}
